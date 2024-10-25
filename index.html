@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🌍🗞️News Fetcher📢📃</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to CSS -->
+</head>
+<body>
+    <!-- Background Video -->
+    <video autoplay muted loop class="video-background">
+        <source src="background-video.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
+    <!-- Form Content -->
+    <div class="container">
+        <h1>🌍🗞️News Fetcher📢📃</h1>
+        <input type="text" id="search-input" placeholder="Enter title or keyword (e.g., Politics, Technology)">
+        <select id="country-input">
+            <option value="">Select Country</option>
+            <option value="us">United States</option>
+            <option value="gb">United Kingdom</option>
+            <option value="in">India</option>
+            <option value="ca">Canada</option>
+        </select>
+        <select id="time-range-input">
+            <option value="">Select Time Range</option>
+            <option value="24h">Past 24 hours</option>
+            <option value="week">Past week</option>
+        </select>
+        <select id="sentiment-input">
+            <option value="">Select Sentiment</option>
+            <option value="positive">Positive</option>
+            <option value="neutral">Neutral</option>
+            <option value="negative">Negative</option>
+        </select>
+        <select id="popularity-input">
+            <option value="">Select Popularity</option>
+            <option value="most_viewed">Most Viewed</option>
+            <option value="most_shared">Most Shared</option>
+        </select>
+        <select id="word-count-input">
+            <option value="">Select Article Word Count</option>
+            <option value="under_500">Under 500 words</option>
+            <option value="500_1000">500-1000 words</option>
+        </select>
+        <select id="breaking-news-input">
+            <option value="">Show Breaking News</option>
+            <option value="true">Yes</option>
+            <option value="false">No</option>
+        </select>
+        <button id="fetch-news">Search News</button>
+        <p class="scroll-message" id="scroll-message">Scroll down to see the news.</p>
+    </div>
+
+    <!-- News Container -->
+    <div id="news-container" class="container"></div>
+
+    <!-- Link to JavaScript file -->
+    <script src="script.js"></script>
+</body>
+</html>
